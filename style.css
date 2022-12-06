@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.top-container {
+  background-image: url(./wallpa.png);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.top-container h1 {
+  font-size: 50px;
+  color: brown;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.bottom-container {
+  font-family: sans-serif;
+  margin: 5px;
+}
+
+.text {
+  margin: 50px 5%;
+}
+
+.navbar {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  align-items: center;
+  background-color: azure;
+  width: 100%;
+  transition: background-color 0.4s;
+}
+
+.navbar ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  margin: 10px;
+  padding-right: 5px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: red;
+}
+
+.navbar.active {
+  background-color: black;
+}
+
+.navbar.active ul li a {
+  color: aliceblue;
+}
+
+.navbar.navbar.active ul li a:hover {
+  color: red;
+}
+
+h2 {
+  display: flex;
+  font-family: sans-serif;
+  font-size: 15px;
+  justify-content: center;
+  background-color: azure;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(207, 198, 207);
+  background-size: cover;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  filter: brightness(60%);
+}
+
+.active.container {
+  filter: blur(5px) brightness(0.7);
+}
+
+h4 {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  color: purple;
+}
+.popup-container {
+  position: fixed;
+  font-size: 10px;
+  left: 50px;
+  transform: translate(100%);
+  background-color: white;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  color: purple;
+  opacity: ;
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+  border-radius: 5px;
+}
+
+.label {
+  color: purple;
+  font-family: sans-serif;
+}
+
+.input {
+  margin: 2px;
+  padding: 5px;
+  font-size: 10px;
+}
+
+.input::placeholder {
+  color: lightgray;
+}
+.submit {
+  padding: 5px;
+  margin: 10px 0;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+.reset {
+  padding: 5px;
+  margin: 10px 0;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.close-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+}
+
+.close-icon:hover {
+  color: purple;
+}
+
+.active.popup-container {
+  visibility: hidden;
+}
+
+.contact_p {
+  margin: 1px 0;
+}
+
+.contact_label {
+  margin: 2px;
+  display: block;
+  font-weight: bold;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="index.html"><img src="./logo.svg" alt="logo" /></a>
+      <ul>
+        <li><a href="/#">Home</a></li>
+        
+    </div>
+
+    <div class="container">
+      <button class="btn">Click Here to send a message</button>
+    </div>
+    <div class="popup-container active">
+        <form action="https://httpbin.org.get">
+
+
+            <h4>Contact information</h4>
+        <p class="contact_p">
+      <label class="contact_label" for="name">Name</label>
+      <input type="text" name="name" class="input" placeholder="Temitope" required/>
+    </p>
+    <p class="contact_p">
+      <label class="contact_label" for="Surname">Surname</label>
+      <input type="text" name="name" class="input" placeholder="Oluwatobi" required/>
+    </p>
+    <p class="contact_p">
+      <label class="contact_label" for="email">Your Email</label>
+      <input
+        type="email"
+        name="email"
+        class="input"
+        placeholder="Enter Your Email" required/>
+        </p>
+        <p class="contact_p">
+            <label class="contact_label" for="phone">Phone:</label>
+            <input type="tel" name="phone" id="phone" required class="input">
+        </p>
+        <p class="contact_label">
+        <label for="message">Your Message</label>
+    </p>
+    <p>      <textarea name="text" placeholder="Write your message" required></textarea>
+    </p>
+
+      <button class="submit">Submit</button>
+      <button class="reset">Reset</button>
+    
+</form>
+      <div class="close-icon">
+        <i class="fa-regular fa-circle-xmark fa-2x"></i>
+      </div>
+    </div>
+    <h3>Our Location</h2>
+        <address>
+          234, Muri Okunola Street, Karimu <br />
+          Kotun Street, Victoria Island Lagos.
+          <br /><br />
+          Phone: <a href="tel:+23480898428476">080898428476</a>
+        </address>
+    <hr />
+    <footer><h2>&copy; Property of Branches</h2></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
+
