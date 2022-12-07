@@ -67,6 +67,15 @@
   color: red;
 }
 
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
 h2 {
   display: flex;
   font-family: sans-serif;
@@ -85,6 +94,70 @@ h2 {
   background-size: cover;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.middle {
+  font-size: 30px;
+}
+
+.containerbox {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.box {
+  width: 20%;
+  height: 150px;
+  background: rgb(245, 241, 241);
+  margin: 20px;
+  box-sizing: border-box;
+  font-size: 50px;
+  border-radius: 5px;
+  border: none;
+}
+
+.foodmenu {
+  font-size: 20px;
+  font-family: cursive;
+  padding: 2px;
+}
+
+.foodmenu_p {
+  font-size: 12px;
+  font-family: cursive;
+  padding: 10px;
+}
+
+/* .containerPic {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.pic {
+  width: 60%;
+  height: 500px;
+  background: rgb(241, 245, 241);
+  margin: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: none;
+} */
+
+.pic {
+  margin: 30px;
+  border-radius: 5px;
+}
 .btn {
   padding: 10px 20px;
   border-radius: 5px;
@@ -169,15 +242,77 @@ textarea {
   visibility: hidden;
 }
 
-.contact_p {
-  margin: 1px 0;
+.footer {
+  margin-top: 100px;
+  /* width: 100%; */
+  padding: 100px 15%;
+  background-color: black;
+  color: white;
+  display: flex;
 }
 
-.contact_label {
-  margin: 2px;
-  display: block;
-  font-weight: bold;
+.footer div {
+  text-align: center;
 }
+.col-2 {
+  flex-grow: 2;
+}
+
+.footer div h3 {
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+.col-1 a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 10px;
+}
+
+form input {
+  width: 400px;
+  height: 45px;
+  border-radius: 5px;
+  margin-top: 2px;
+  margin-bottom: 40px;
+  outline: none;
+  border: none;
+}
+
+form button {
+  background: transparent;
+  border: 5px solid white;
+  color: white;
+  border: white;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 30px;
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons i {
+  font-size: 22px;
+  margin: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 40%;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .popup-container {
     top: 0;
